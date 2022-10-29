@@ -1,2 +1,8 @@
-TEST_VALUE:
-  name: cookie
+MONGODB_CONFIG:
+  name: 'nest_tpl'
+  type: mongodb
+  url: 'mongodb://localhost:27017'
+  database: 'nest_tpl'
+  entities: 'mongo'
+  logging: false
+  synchronize: true
