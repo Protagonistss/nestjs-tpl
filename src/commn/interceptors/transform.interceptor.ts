@@ -13,7 +13,8 @@ export class TransformInterceptor<T> implements NestInterceptor<T, Response<T>> 
       data,
       status: 0,
       extra: {},
-      msg: 'success',
+      message: 'success',
+      success: true
     })))
   }
 }
