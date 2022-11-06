@@ -18,4 +18,12 @@ export class UserController {
   create(@Body() user: AddUserDto) {
     return this.userService.createOrSave(user);
   }
+
+  @ApiOperation({
+    summary: '查询用户',
+  })
+  @Get('/get')
+  getAllUsers() {
+    return this.userService.findAll();
+  }
 }

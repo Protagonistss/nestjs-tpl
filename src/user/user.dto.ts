@@ -2,9 +2,6 @@ import { ApiProperty } from '@nestjs/swagger';
 import { IsNotEmpty } from 'class-validator';
 
 export class AddUserDto {
-  @ApiProperty({ example: '1' })
-  id?: string;
-
   @ApiProperty({ example: 'cookie' })
   @IsNotEmpty()
   name: string;
